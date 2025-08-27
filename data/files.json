@@ -1,0 +1,30 @@
+﻿[
+    {
+        "name": "placeholder.html",
+        "section": "games",
+        "github_url": "https://github.com/Moamin1987/madrasati/blob/main/grades/الصفأول/الترمالأول/اللغةالعربية/games/placeholder.html",
+        "metadata": {
+            "author": "فريق تطوير مدرستي",
+            "title": "مرحباً بك في مادة اللغةالعربية",
+            "description": "صفحة ترحيبية لمادة اللغةالعربية في الصف الأول",
+            "year": "2026",
+            "subject": "اللغةالعربية",
+            "grade": "الصف الأول",
+            "term": "الترم الأول"
+        }
+    },
+    {
+        "name": "example.pdf",
+        "section": "lessons",
+        "github_url": "https://github.com/Moamin1987/madrasati/blob/main/grades/الصفأول/الترمالأول/اللغةالعربية/lessons/example.pdf",
+        "metadata": {
+            "author": "أحمد محمد",
+            "title": "درس تمهيدي في اللغة العربية",
+            "description": "درس تمهيدي في اللغة العربية للصف الأول الابتدائي",
+            "year": "2026",
+            "subject": "اللغةالعربية",
+            "grade": "الصف الأول",
+            "term": "الترم الأول"
+        }
+    }
+]

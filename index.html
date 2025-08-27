@@ -1,0 +1,173 @@
+﻿<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مدرستي - منصة تعليمية</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- الصفحة الرئيسية -->
+    <div id="homePage" class="page active">
+        <header class="header">
+            <button class="copyright-icon" aria-label="معلومات التطبيق">
+                <i class="fas fa-info-circle"></i>
+            </button>
+            <div class="logo-container">
+                <h1 class="logo">🌟 مدرستي 🌟</h1>
+                <div class="logo-english">✨ Madrasaty ✨</div>
+                <p class="subtitle">🎨 منصة تعليمية سحرية لجميع المراحل الدراسية 🚀</p>
+            </div>
+        </header>
+        
+        <main class="container">
+            <section class="grades-grid" aria-label="الصفوف الدراسية">
+                <article class="grade-card" data-grade="الصف الأول">
+                    <div class="grade-icon">🌸</div>
+                    <div class="grade-content">
+                        <h2>الصف الأول الابتدائي</h2>
+                        <p>🌱 أساسيات التعلم والمهارات الأولى</p>
+                    </div>
+                </article>
+                
+                <article class="grade-card" data-grade="الصف الثاني">
+                    <div class="grade-icon">🌺</div>
+                    <div class="grade-content">
+                        <h2>الصف الثاني الابتدائي</h2>
+                        <p>🌿 تطوير المهارات الأساسية</p>
+                    </div>
+                </article>
+                
+                <article class="grade-card" data-grade="الصف الثالث">
+                    <div class="grade-icon">📚</div>
+                    <div class="grade-content">
+                        <h2>الصف الثالث الابتدائي</h2>
+                        <p>🌈 بناء المعرفة والفهم</p>
+                    </div>
+                </article>
+                
+                <article class="grade-card" data-grade="الصف الرابع">
+                    <div class="grade-icon">🌼</div>
+                    <div class="grade-content">
+                        <h2>الصف الرابع الابتدائي</h2>
+                        <p>⭐ تعميق الفهم والتطبيق</p>
+                    </div>
+                </article>
+                
+                <article class="grade-card" data-grade="الصف الخامس">
+                    <div class="grade-icon">🌷</div>
+                    <div class="grade-content">
+                        <h2>الصف الخامس الابتدائي</h2>
+                        <p>🎯 مهارات متقدمة وتفكير نقدي</p>
+                    </div>
+                </article>
+                
+                <article class="grade-card" data-grade="الصف السادس">
+                    <div class="grade-icon">🏆</div>
+                    <div class="grade-content">
+                        <h2>الصف السادس الابتدائي</h2>
+                        <p>🎓 التحضير للمرحلة الإعدادية</p>
+                    </div>
+                </article>
+            </section>
+        </main>
+    </div>
+
+    <!-- صفحة الترمين -->
+    <div id="termsPage" class="page">
+        <header class="header">
+            <button class="copyright-icon" aria-label="معلومات التطبيق">
+                <i class="fas fa-info-circle"></i>
+            </button>
+            <div class="logo-container">
+                <h2 id="selectedGradeTitle">اختر الترم الدراسي</h2>
+            </div>
+        </header>
+        
+        <main class="container">
+            <section class="terms-grid" aria-label="الترم الدراسي">
+                <article class="term-card" data-term="الترم الأول">
+                    <div class="term-icon">📚</div>
+                    <div class="term-content">
+                        <h2>الترم الأول</h2>
+                        <p>المواد الأساسية</p>
+                    </div>
+                </article>
+                
+                <article class="term-card" data-term="الترم الثاني">
+                    <div class="term-icon">📖</div>
+                    <div class="term-content">
+                        <h2>الترم الثاني</h2>
+                        <p>استكمال المنهج</p>
+                    </div>
+                </article>
+            </section>
+        </main>
+    </div>
+
+    <!-- صفحة المواد -->
+    <div id="subjectsPage" class="page">
+        <header class="header">
+            <button class="copyright-icon" aria-label="معلومات التطبيق">
+                <i class="fas fa-info-circle"></i>
+            </button>
+            <div class="logo-container">
+                <h2 id="selectedSubjectTitle">اختر المادة</h2>
+            </div>
+        </header>
+        
+        <main class="container">
+            <!-- قسم "العب وذاكر" -->
+            <section class="lesson-container">
+                <div class="lesson-header">
+                    <span class="lesson-icon">🎮</span>
+                    <h3>العب وذاكر</h3>
+                </div>
+                <div id="gamesList" class="files-list"></div>
+            </section>
+
+            <!-- قسم "دروس ومذكرات" -->
+            <section class="lesson-container">
+                <div class="lesson-header">
+                    <span class="lesson-icon">📚</span>
+                    <h3>دروس ومذكرات</h3>
+                </div>
+                <div id="lessonsList" class="files-list"></div>
+            </section>
+        </main>
+    </div>
+
+    <!-- شريط التنقل السفلي -->
+    <nav class="bottom-nav">
+        <button id="homeNavBtn" class="nav-btn active" onclick="showHomePage()">
+            <i class="fas fa-home"></i> الرئيسية
+        </button>
+        <button id="backNavBtn" class="nav-btn" onclick="goBack()" style="display: none;">
+            <i class="fas fa-arrow-right"></i> رجوع
+        </button>
+        <button id="termsNavBtn" class="nav-btn" onclick="goToTerms()" style="display: none;">
+            <i class="fas fa-book"></i> الترم
+        </button>
+    </nav>
+
+    <!-- نافذة معلومات التطبيق -->
+    <div id="copyrightPopup" class="popup" role="dialog" aria-labelledby="popupTitle" aria-modal="true">
+        <div class="popup-content">
+            <h3 id="popupTitle">معلومات التطبيق</h3>
+            <div class="popup-info">
+                <p>تم التطوير بواسطة: ✨ معامل التطوير التكنولوجي ✨</p>
+                <p>تحت إشراف: 🎯 محمد أمين سلطان 🎯</p>
+                <p>الإصدار: 2.0</p>
+                <p>📱 يدعم الإعلانات الآمنة للأطفال</p>
+            </div>
+            <button class="close-btn">إغلاق</button>
+        </div>
+    </div>
+
+    <!-- حاوية الإعلانات -->
+    <div id="adContainer" class="ad-container"></div>
+
+    <script src="assets/js/app.js"></script>
+</body>
+</html>

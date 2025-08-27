@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اللغةالعربية - System.Collections.Hashtable</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+        .placeholder-container {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 25px;
+            padding: 50px 30px;
+            max-width: 500px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            animation: fadeIn 0.8s ease;
+        }
+        .logo {
+            font-size: 80px;
+            margin-bottom: 20px;
+            animation: bounce 2s infinite;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 15px;
+            font-size: 2.2rem;
+        }
+        .message {
+            color: #555;
+            font-size: 1.3rem;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+        .coming-soon {
+            background: linear-gradient(45deg, #FF6B6B, #4ECDC4);
+            color: white;
+            padding: 15px 25px;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            display: inline-block;
+            animation: pulse 2s infinite;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes bounce {
+            0%, 20%, 60%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-20px); }
+            80% { transform: translateY(-10px); }
+        }
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(255, 107, 107, 0.7); }
+            70% { box-shadow: 0 0 0 15px rgba(255, 107, 107, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(255, 107, 107, 0); }
+        }
+    </style>
+</head>
+<body>
+    <div class="placeholder-container">
+        <div class="logo">📚</div>
+        <h1>مرحباً بك في مادة اللغةالعربية</h1>
+        <p class="message">نحن نعمل بجد لتقديم أفضل المحتويات التعليمية لك</p>
+        <div class="coming-soon">سيتم رفع المادة قريباً</div>
+    </div>
+</body>
+</html>
